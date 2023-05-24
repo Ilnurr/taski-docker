@@ -58,7 +58,7 @@ build_and_push_to_docker_hub:
           # Для каждого пересобранного образа 
           # устанавливаем тег latest, чтобы потом
           # на сервере и в docker-compose.yml не указывать версию
-          tags: ilnurr/taski_backend:latest 
+          tags: ilnurr/taski_backend:latest
   build_and_push_to_docker_hub:
     runs-on: ubuntu-latest
     needs: tests  # Не выполнять сразу, ждать, пока выполнится tests
