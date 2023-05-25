@@ -100,7 +100,7 @@ jobs:
 
     - name: Install dependencies
       # Эта команда устанавливает зависимости для фронтенда
-      run: |
+      run: | 
         cd frontend/
         npm ci
 
