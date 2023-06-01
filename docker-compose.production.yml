@@ -20,6 +20,8 @@ services:
   frontend:
     image: ilnurr/taski_frontend  # Качаем с DockerHub
     env_file: .env
+    depends_on:
+      - db
     command: cp -r /app/build/. /frontend_static/
     volumes:
       - static_volume:/frontend_static
